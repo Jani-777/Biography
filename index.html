@@ -1,83 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/aos.css">
+    <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body class="bg-dark text-light">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed; width: 100%; z-index: 1000;">
-  <div class="container">
-    <a class="navbar-brand" href="index.html" style="color: rgb(247, 134, 30);">MyWebsite</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
 
-<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" style="margin-top: 58px;">
-      <img src="https://picsum.photos/id/2/1200/400?1" class="d-block w-100" alt="slide1">
-    </div>
-    <div class="carousel-item" style="margin-top: 58px;">
-      <img src="https://picsum.photos/id/0/1200/400?2" class="d-block w-100" alt="slide2">
-    </div>
-    <div class="carousel-item" style="margin-top: 58px;">
-      <img src="https://picsum.photos/id/6/1200/400?3" class="d-block w-100" alt="slide3">
-    </div>
-  </div>
-</div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container flex-lg-column">
+            <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+                <span class="h3 fw-bold d-block d-lg-none">John Lloyd Ramos</span>
+                <img src="./assets/images/dp.jpg" class="d-none d-lg-block rounded-circle" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
 
-<div class="container mt-5">
-  <h3 class="text-center mb-4">This is John Lloyd Ramos</h3>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card shadow">
-        <div class="card-body">
-          <h5 class="card-title">Cute Person</h5>
-          <p class="card-text">
-            Friendly and approachable individual with a warm personality.
-          </p>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card shadow">
-        <div class="card-body">
-          <h5 class="card-title">Jolly</h5>
-          <p class="card-text">
-            Positive attitude and cheerful demeanor.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card shadow">
-        <div class="card-body">
-          <h5 class="card-title">Web Developer</h5>
-          <p class="card-text">
-            Passionate about creating user-friendly websites.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+    </nav>
+    <!-- //NAVBAR -->
 
-<footer class="text-center py-4 bg-light text-warning">
-    © 2026 John Lloyd Ramos
-</footer>
+    <!-- CONTENT WRAPPER -->
+    <div id="content-wrapper">
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- HOME -->
+        <section id="home" class="full-height px-lg-5">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">I AM <span class="text-brand">JOHN LLOYD RAMOS</span> <br></h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">
+                            An IT student with a passion for technology and innovation. I specialize in web development, software engineering, and digital marketing. My goal is to create impactful solutions that drive success for businesses and individuals alike.
+                        </p>
+                        <div data-aos="fade-up" data-aos-delay="600">
+                            <a href="#work" class="btn btn-brand me-3">Explore My Work</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- //HOME -->
+
+        <!-- SERVICES -->
+        <section id="services" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">SKILLS</h6>
+                        <h1>
+                            Programming Languages Used
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-feather"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">HTML</h5>
+                            <p>
+                                Learned the art of crafting well-structured and semantic HTML5 documents to build the foundation of engaging web experiences.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-pencil-ruler"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">CSS</h5>
+                            <p>
+                                Gained proficiency in CSS3 to create visually appealing and responsive web designs that adapt seamlessly across devices.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-laptop-code"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">JavaScript</h5>
+                            <p>
+                                Developed dynamic and interactive web applications using JavaScript, enhancing user engagement and functionality.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- SERVICES -->
+
+        <!-- WORK -->
+        <section id="work" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">PROJECTS</h6>
+                        <h1>My Recent Projects</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/finance-tracking.webp" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Financial Tracking System</h4>
+                                <p>
+                                    A comprehensive financial tracking system designed to help users manage their expenses, budgets, and financial goals effectively.
+                                </p>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/beauty-wellness.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Beauty & Wellness Landing Page</h4>
+                                <p>
+                                    A sleek and modern landing page for a beauty and wellness brand, showcasing services, products, and customer testimonials.
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- //WORK -->
+
+        <!-- ABOUT -->
+        <section id="about" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">ABOUT</h6>
+                        <h1>My Education & Experience</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-5">
+                    <div class="col-lg-6">
+
+                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Education</h3>
+                        <div class="row gy-4">
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>BS in Information Technology</h4>
+                                    <p class="text-brand mb-2">University of Mindanao (2023 - Present)</p>
+                                    <p class="mb-0">
+                                        Currently focusing on web development, UI/UX, and database management.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Online Education</h4>
+                                    <p class="text-brand mb-2">Google Coursera (2024 - 2025)</p>
+                                    <p class="mb-0">
+                                        Completed courses in web development, UI/UX, and IT Support.    
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Junior to Senior High School</h4>
+                                    <p class="text-brand mb-2">Bernardo D. Carpio NHS (2014 - 2020)</p>
+                                    <p class="mb-0">Completed Senior High School with a focus on STEM (Science, Technology, Engineering, and Mathematics).</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Experience</h3>
+                        <div class="row gy-4">
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>E-Commerce Data Analyst</h4>
+                                    <p class="text-brand mb-2">Spectrum (2020 - 2021)</p>
+                                    <p class="mb-0">
+                                        Specializing in data-driven insights to optimize online sales strategies and enhance customer experiences.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Judiciary Data Encoder</h4>
+                                    <p class="text-brand mb-2">AP Solutions (2021 - 2022)</p>
+                                    <p class="mb-0">
+                                        Accurate data entry and management within the judiciary system.
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Clerical Assistant</h4>
+                                    <p class="text-brand mb-2">Office of Councilor Dayap (2019 - 2020)</p>
+                                    <p class="mb-0">
+                                        Administrative support and assisted in various clerical tasks to ensure smooth office operations.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- //ABOUT -->
+
+        <!-- CONTACT -->
+        <section id="contact" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8 pb-4" data-aos="fade-up">
+                        <h6 class="text-brand">CONTACT</h6>
+                        <h1>Interested in working together? Let's talk
+                        </h1>
+                    </div>
+
+                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+                        <form action="#" class="row g-lg-3 gy-3">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group col-12">
+                                <input type="text" class="form-control" placeholder="Enter subject">
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea name="" rows="4" class="form-control" placeholder="Enter your message"></textarea>
+                            </div>
+                            <div class="form-group col-12 d-grid">
+                                <button type="submit" class="btn btn-brand">Contact me</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- //CONTACT -->
+
+        <!-- FOOTER -->
+        <footer class="py-5 px-lg-5">
+            <div class="container">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">Designed by <a href="#" class="fw-bold">Johnny</a></p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="social-icons">
+                            <a href="https://t.me/@johnlloydramos" target="_blank"><i class="lab la-telegram"></i></a>
+                            <a href="#"><i class="lab la-instagram"></i></a>
+                            <a href="https://www.facebook.com/johnlloyd.ramos.7792/" target="_blank"><i class="lab la-facebook"></i></a>
+                            <a href="https://github.com/Jani-777" target="_blank"><i class="lab la-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //FOOTER -->
+
+    </div>
+    <!-- //CONTENT WRAPPER -->
+
+
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
